@@ -208,7 +208,7 @@ nav {
 }
 .typedText {
   text-transform: capitalize;
-  color: var(--text-color-third);
+  color: rgb(160, 160, 16);
 }
 .featured-text-info {
   font-size: 15px;
