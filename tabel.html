@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- --------- UNICONS ---------- -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+  <!-- --------- CSS ---------- -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- --------- FAVICON ---------- -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+
+  <title>Tutorial</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- --------------- HEADER --------------- -->
+    <nav id="header">
+      <div class="nav-logo">
+        <p class="nav-name">Adhi</p>
+        <span>.</span>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="index.html#about" class="nav-link">About</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="index.html#projects" class="nav-link">Projects</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="tutorial.html" class="nav-link active-link">Tutorial</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="index.html#contact" class="nav-link">Contact</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <button class="btn">
+          Download CV <i class="uil uil-file-alt"></i>
+        </button>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+      <section class="section" id="tutorials">
+        <div class="top-header">
+          <h1>Tutorial: CSS Basics</h1>
+        </div>
+
+        <!-- Tutorial: Inline CSS -->
+        <div class="tutorial-box">
+          <h2>1. Membuat Table HTML</h2>
+          <p>
+            Untuk Membuat tabel kita dapat menggunakan tag table Selanjutnya jika ingin menambahkan kolom header table
+            dapat menggunakan th diantara tr
+            dibawah thead Untuk isi table dapat menggunakan td diantara tr dibawah tbody
+          </p>
+          <h3>Code:</h3>
+          <textarea class="editor" rows="3" id="inlineCode" placeholder="">
+
+            <style>
+              /* Style untuk tabel */
+              table {
+                  width: 100%;
+                  border-collapse: collapse; 
+              }
+              th,td {
+                  border: 1px solid black;
+                  padding: 8px;
+                  text-align: left;
+              }
+              th{
+                  color: rgb(238, 238, 238);
+                  background-color: #343434;
+              }
+      
+          </style>
+            
+            <table>
+              <thead>
+                  <tr>
+                      <!-- Header Tabel Menggunakan th -->
+                      <th>NIM</th> 
+                      <th>Nama</th>  
+                      <th>IPK</th>
+                      <th>Jurusan</th>
+                      <th>Fakultas</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <!-- isi tabel menggunakan td -->
+                      <td>010</td>
+                      <td>Messi</td>
+                      <td>2.5</td>
+                      <td>Sastra Mesin</td>
+                      <td>Teknik</td>
+                  </tr>
+                  <tr>
+                      <!-- isi tabel menggunakan td -->
+                      <td>021</td>
+                      <td>Antony</td>
+                      <td>3.99</td>
+                      <td>Teknik Informatika</td>
+                      <td>SAINTEK</td>
+                  </tr>
+                  <tr>
+                      <!-- isi tabel menggunakan td -->
+                      <td>015</td>
+                      <td>Mudryk</td>
+                      <td>3.99</td>
+                      <td>Filsafat</td>
+                      <td>Seni dan Bahasa</td>
+                  </tr>
+              </tbody>
+          </table>
+                    </textarea>
+          <button class="run-button" onclick="runInlineCode()">Run</button>
+          <button class="undo-button" onclick="undoInlineCode()">Undo</button>
+          <h3>Hasil:</h3>
+          <div class="preview" id="previewInline"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+      <div class="top-footer">
+        <p>Bantar Adhi Nugrahanto</p>
+      </div>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list">
+            <a href="#home">Home</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="tutorial.html">Tutorial</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social-icons">
+        <div class="icon"><i class="uil uil-instagram" onClick="window.location.href='https://www.instagram.com/adhii._57/'"></i></div>
+        <div class="icon"><i class="uil uil-linkedin-alt" onClick="window.location.href='https://www.linkedin.com/in/bantar-adhi-nugrahanto-488637300'"></i></div>
+        <div class="icon"><i class="uil uil-dribbble"></i></div>
+        <div class="icon"><i class="uil uil-github-alt" onClick="window.location.href='github.com/Adhi57'"></i></div>
+      </div>
+      <div class="bottom-footer">
+        <p style="color: whitesmoke;">
+          Copyright &copy;
+          <a href="#home" style="text-decoration: none">adhinugrahanto027</a> - All
+          rights reserved
+        </p>
+      </div>
+    </footer>
+
+  <!-- ----- MAIN JS ----- -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    let inlineCodeHistory = [];
+    let selectorCodeHistory = [];
+    let marginsCodeHistory = [];
+
+    function runInlineCode() {
+      const code = document.getElementById("inlineCode").value;
+      document.getElementById("previewInline").innerHTML = code;
+      inlineCodeHistory.push(code);
+    }
+
+    function undoInlineCode() {
+      if (inlineCodeHistory.length > 1) {
+        inlineCodeHistory.pop(); // Remove the last entry
+        const previousCode = inlineCodeHistory[inlineCodeHistory.length - 1];
+        document.getElementById("inlineCode").value = previousCode;
+        document.getElementById("previewInline").innerHTML = previousCode; // Update preview
+      } else {
+        document.getElementById("previewInline").innerHTML = ""; // Clear if no history left
+      }
+    }
+
+    function runSelectorCode() {
+      const code = document.getElementById("selectorCode").value;
+      const style = document.createElement("style");
+      style.innerHTML = code;
+
+      // Clear previous styles
+      const preview = document.getElementById("previewSelector");
+      if (preview.querySelector("style"))
+        preview.querySelector("style").remove();
+
+      preview.appendChild(style);
+      selectorCodeHistory.push(code);
+    }
+
+    function undoSelectorCode() {
+      if (selectorCodeHistory.length > 1) {
+        selectorCodeHistory.pop(); // Remove the last entry
+        const previousCode =
+          selectorCodeHistory[selectorCodeHistory.length - 1];
+        document.getElementById("selectorCode").value = previousCode;
+
+        const preview = document.getElementById("previewSelector");
+        preview.querySelector("style").innerHTML = previousCode; // Update preview
+      } else {
+        const preview = document.getElementById("previewSelector");
+        if (preview.querySelector("style"))
+          preview.querySelector("style").remove(); // Clear if no history left
+      }
+    }
+
+    function runMarginsCode() {
+      const code = document.getElementById("marginsCode").value;
+      const style = document.createElement("style");
+      style.innerHTML = code;
+
+      // Clear previous styles
+      const preview = document.getElementById("previewMargins");
+      if (preview.querySelector("style"))
+        preview.querySelector("style").remove();
+
+      preview.appendChild(style);
+      marginsCodeHistory.push(code);
+    }
+
+    function undoMarginsCode() {
+      if (marginsCodeHistory.length > 1) {
+        marginsCodeHistory.pop(); // Remove the last entry
+        const previousCode =
+          marginsCodeHistory[marginsCodeHistory.length - 1];
+        document.getElementById("marginsCode").value = previousCode;
+
+        const preview = document.getElementById("previewMargins");
+        preview.querySelector("style").innerHTML = previousCode; // Update preview
+      } else {
+        const preview = document.getElementById("previewMargins");
+        if (preview.querySelector("style"))
+          preview.querySelector("style").remove(); // Clear if no history left
+      }
+    }
+  </script>
+</body>
+
+</html>

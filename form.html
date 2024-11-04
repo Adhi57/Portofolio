@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- --------- UNICONS ---------- -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+  <!-- --------- CSS ---------- -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- --------- FAVICON ---------- -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+
+  <title>Tutorial</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- --------------- HEADER --------------- -->
+    <nav id="header">
+      <div class="nav-logo">
+        <p class="nav-name">Adhi</p>
+        <span>.</span>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="index.html#about" class="nav-link">About</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="index.html#projects" class="nav-link">Projects</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="tutorial.html" class="nav-link active-link">Tutorial</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="index.html#contact" class="nav-link">Contact</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <button class="btn">
+          Download CV <i class="uil uil-file-alt"></i>
+        </button>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+      <section class="section" id="tutorials">
+        <div class="top-header">
+          <h1>Tutorial: CSS Basics</h1>
+        </div>
+
+        <!-- Tutorial: Inline CSS -->
+        <div class="tutorial-box">
+          <h2>Membuat Form  HTML</h2>
+          <p>
+            Untuk membuat Form kita dapat menggunakan tag form, dan dapat ditambahkan action serta method untuk mengirimkan data  
+          </p>
+          <h3>Code:</h3>
+          <textarea class="editor" rows="3" id="inlineCode" placeholder="">
+
+                    <style>
+                      /* Pengaturan container form login */
+                      .login-container {
+                        background-color: white;
+                        padding: 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        width: 80%;
+                        margin: auto;
+                        margin-bottom: 90px;
+                      }
+                    
+                      /* Pengaturan judul form */
+                      .login-container h2 {
+                        margin-bottom: 20px;
+                        text-align: center;
+                      }
+                    
+                      /* Pengaturan input text, email, dan password */
+                      .login-container input[type="text"],
+                      .login-container input[type="email"],
+                      .login-container input[type="password"] {
+                        width: 100%;
+                        /* Lebar input 100% dari parent container */
+                        padding: 10px;
+                        /* Padding dalam input */
+                        margin: 10px 0;
+                        /* Jarak antar input */
+                        border: 1px solid #ccc;
+                        /* Border abu-abu pada input */
+                        border-radius: 4px;
+                        /* Membuat sudut input melengkung */
+                      }
+                    
+                      /* Pengaturan tombol submit dan reset */
+                      .login-container input[type="submit"],
+                      .login-container input[type="reset"] {
+                        width: 48%;
+                        /* Lebar tombol menjadi 48% agar dua tombol bisa berada dalam satu baris */
+                        padding: 10px;
+                        border: none;
+                        /* Menghilangkan border default pada tombol */
+                        border-radius: 4px;
+                        /* Membuat sudut tombol melengkung */
+                        background-color: #4CAF50;
+                        /* Warna latar tombol submit hijau */
+                        color: white;
+                        /* Warna teks tombol putih */
+                        cursor: pointer;
+                        /* Menampilkan pointer saat tombol di-hover */
+                        margin-top: 10px;
+                      }
+                    
+                      /* Pengaturan warna tombol reset (warna merah) */
+                      .login-container input[type="reset"] {
+                        background-color: #f44336;
+                      }
+                    
+                      /* Efek hover saat tombol diklik */
+                      .login-container input[type="submit"]:hover,
+                      .login-container input[type="reset"]:hover {
+                        opacity: 0.9;
+                        /* Mengubah transparansi saat hover */
+                      }
+                    </style>
+                    </head>
+                    
+                    <body>
+                      <div class="login-container">
+                        <h2>Register</h2>
+                    
+                        <form action="/register" method="POST">
+                          <!-- Input username -->
+                          <label for="username">Username:</label>
+                          <input type="text" id="username" name="username" required>
+                    
+                          <!-- Input email -->
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" name="email" required>
+                    
+                          <!-- Input password -->
+                          <label for="password">Password:</label>
+                          <input type="password" id="password" name="password" required>
+                    
+                          <!-- Konfirmasi password -->
+                          <label for="confirm_password">Confirm Password:</label>
+                          <input type="password" id="confirm_password" name="confirm_password" required>
+                    
+                          <!-- Tombol submit dan reset -->
+                          <div style="display: flex; justify-content: space-between;">
+                            <input type="submit" value="Register">
+                            <input type="reset" value="Reset">
+                          </div>
+                        </form>
+                      </div>
+
+
+          </textarea>
+          <button class="run-button" onclick="runInlineCode()">Run</button>
+          <button class="undo-button" onclick="undoInlineCode()">Undo</button>
+          <h3>Hasil:</h3>
+          <div class="preview" id="previewInline"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+      <div class="top-footer">
+        <p>Bantar Adhi Nugrahanto</p>
+      </div>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list">
+            <a href="#home">Home</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="tutorial.html">Tutorial</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social-icons">
+        <div class="icon"><i class="uil uil-instagram" onClick="window.location.href='https://www.instagram.com/adhii._57/'"></i></div>
+        <div class="icon"><i class="uil uil-linkedin-alt" onClick="window.location.href='https://www.linkedin.com/in/bantar-adhi-nugrahanto-488637300'"></i></div>
+        <div class="icon"><i class="uil uil-dribbble"></i></div>
+        <div class="icon"><i class="uil uil-github-alt" onClick="window.location.href='github.com/Adhi57'"></i></div>
+      </div>
+      <div class="bottom-footer">
+        <p style="color: whitesmoke;">
+          Copyright &copy;
+          <a href="#home" style="text-decoration: none">adhinugrahanto027</a> - All
+          rights reserved
+        </p>
+      </div>
+    </footer>
+
+  <!-- ----- MAIN JS ----- -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    let inlineCodeHistory = [];
+    let selectorCodeHistory = [];
+    let marginsCodeHistory = [];
+
+    function runInlineCode() {
+      const code = document.getElementById("inlineCode").value;
+      document.getElementById("previewInline").innerHTML = code;
+      inlineCodeHistory.push(code);
+    }
+
+    function undoInlineCode() {
+      if (inlineCodeHistory.length > 1) {
+        inlineCodeHistory.pop(); // Remove the last entry
+        const previousCode = inlineCodeHistory[inlineCodeHistory.length - 1];
+        document.getElementById("inlineCode").value = previousCode;
+        document.getElementById("previewInline").innerHTML = previousCode; // Update preview
+      } else {
+        document.getElementById("previewInline").innerHTML = ""; // Clear if no history left
+      }
+    }
+
+    function runSelectorCode() {
+      const code = document.getElementById("selectorCode").value;
+      const style = document.createElement("style");
+      style.innerHTML = code;
+
+      // Clear previous styles
+      const preview = document.getElementById("previewSelector");
+      if (preview.querySelector("style"))
+        preview.querySelector("style").remove();
+
+      preview.appendChild(style);
+      selectorCodeHistory.push(code);
+    }
+
+    function undoSelectorCode() {
+      if (selectorCodeHistory.length > 1) {
+        selectorCodeHistory.pop(); // Remove the last entry
+        const previousCode =
+          selectorCodeHistory[selectorCodeHistory.length - 1];
+        document.getElementById("selectorCode").value = previousCode;
+
+        const preview = document.getElementById("previewSelector");
+        preview.querySelector("style").innerHTML = previousCode; // Update preview
+      } else {
+        const preview = document.getElementById("previewSelector");
+        if (preview.querySelector("style"))
+          preview.querySelector("style").remove(); // Clear if no history left
+      }
+    }
+
+    function runMarginsCode() {
+      const code = document.getElementById("marginsCode").value;
+      const style = document.createElement("style");
+      style.innerHTML = code;
+
+      // Clear previous styles
+      const preview = document.getElementById("previewMargins");
+      if (preview.querySelector("style"))
+        preview.querySelector("style").remove();
+
+      preview.appendChild(style);
+      marginsCodeHistory.push(code);
+    }
+
+    function undoMarginsCode() {
+      if (marginsCodeHistory.length > 1) {
+        marginsCodeHistory.pop(); // Remove the last entry
+        const previousCode =
+          marginsCodeHistory[marginsCodeHistory.length - 1];
+        document.getElementById("marginsCode").value = previousCode;
+
+        const preview = document.getElementById("previewMargins");
+        preview.querySelector("style").innerHTML = previousCode; // Update preview
+      } else {
+        const preview = document.getElementById("previewMargins");
+        if (preview.querySelector("style"))
+          preview.querySelector("style").remove(); // Clear if no history left
+      }
+    }
+  </script>
+</body>
+
+</html>
