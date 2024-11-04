@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- --------- UNICONS ---------- -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+  <!-- --------- CSS ---------- -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- --------- FAVICON ---------- -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+
+  <title>Portfolio</title>
+
+  <style>
+    .container_tutor {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        h1, h2, p {
+            color: #e7e7e7;
+        }
+        .ul-tutor {
+            list-style-type: none;
+            padding: 0;
+            color: white;
+        }
+        .ul-tutor li {
+            background: rgb(131, 131, 13);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- --------------- HEADER --------------- -->
+    <nav id="header">
+      <div class="nav-logo">
+        <p class="nav-name">Adhi</p>
+        <span>.</span>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list">
+            <a href="#home" class="nav-link active-link">Home</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#about" class="nav-link">About</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#projects" class="nav-link">Projects</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="tutorial.html" class="nav-link">Tutorial</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#contact" class="nav-link">Contact</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <button class="btn">
+          Download CV <i class="uil uil-file-alt"></i>
+        </button>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+            <div class="container_tutor">
+                <h1>Tutorial: Deploy Website ke GitHub Pages</h1>
+                <p>Ikuti langkah-langkah berikut untuk men-deploy website HTML sederhana ke GitHub Pages.</p>
+        
+                <h2>Langkah 1: Buat Repository di GitHub</h2>
+                <ul class="ul-tutor">
+                    <li>Masuk ke akun GitHub Anda.</li>
+                    <li>Klik ikon "+" di kanan atas layar dan pilih <strong>"New repository"</strong>.</li>
+                    <img src="assets/images/Capture1.PNG" alt="">
+                    <li>Masukkan nama repository (misalnya, <strong>Portfolio</strong>).</li>
+                    <li>Tambahkan deskripsi jika diperlukan (opsional).</li>
+                    <li>Pilih opsi <strong>Public</strong> agar orang lain dapat mengakses website Anda.</li>
+                    <li>Klik <strong>Create repository</strong> untuk membuat repository baru.</li>
+                    <img src="assets/images/Capture2.PNG" alt="">
+                </ul>
+        
+                <h2>Langkah 2: Siapkan File HTML</h2>
+                <p>Buat file HTML, CSS, dan JavaScript sesuai kebutuhan.</p>
+        
+                <h2>Langkah 3: Upload File ke Repository dengan VSCode</h2>
+                <ul class="ul-tutor">
+                    <li>Buka folder proyek Anda di Visual Studio Code.</li>
+                    <li>Buka terminal di VS Code dengan menekan <strong>Ctrl + `</strong> (atau pilih <strong>Terminal &gt; New Terminal</strong> dari menu atas).</li>
+                    <li>Inisialisasi repository Git lokal dengan perintah berikut:
+                        <pre>git init</pre>
+                    </li>
+                    <li>Tambahkan file ke staging area:
+                        <pre>git add .</pre>
+                    </li>
+                    <img src="assets/images/Capture3.PNG" alt="">
+                    <li>Konfigurasi informasi pengguna apabila baru pertama kali menggunakan git (hanya perlu dilakukan satu kali di komputer):
+                        <pre>git config --global user.email "adhinugrahanto027@gmail.com"</pre>
+                        <pre>git config --global user.name "Adhi57"</pre>
+                    </li>
+                    <img src="assets/images/Capture4.PNG" alt="">
+                    <li>Commit perubahan dengan pesan:
+                        <pre>git commit -m "first commit"</pre>
+                    </li>
+                    <img src="assets/images/Capture5.PNG" alt="">
+                    <li>Ganti nama branch menjadi <strong>main</strong> (opsional jika default sudah main):
+                        <pre>git branch -M main</pre>
+                    </li>
+                    <li>Tambahkan URL repository GitHub sebagai remote origin:
+                        <pre>git remote add origin https://github.com/Adhi57/Portofolio.git</pre>
+                    </li>
+                    <li>Push file ke GitHub:
+                        <pre>git push -u origin main</pre>
+                    </li>
+                    <img src="assets/images/Capture6.PNG" alt="">
+                </ul>
+        
+                <h2>Langkah 4: Aktifkan GitHub Pages</h2>
+                <ul class="ul-tutor">
+                    <li>Pada halaman repository yang dibuat, klik tab <strong>Settings</strong>.</li>
+                    <li>Scroll ke bawah hingga menemukan bagian <strong>GitHub Pages</strong>.</li>
+                    <li>Di bawah "Source", pilih branch <strong>main</strong>.</li>
+                    <li>Setelah dipilih, klik <strong>Save</strong>.</li>
+                    <img src="assets/images/Capture7.PNG" alt="">
+                    <li>Setelah beberapa saat, link untuk akses website Anda akan muncul.</li>
+                    <li>Anda sekarang dapat mengakses website di URL yang diberikan GitHub, seperti:
+                        <br><code>https://username.github.io/Portfolio</code></li>
+                    <img src="assets/images/Capture8.PNG" alt="">
+                </ul>
+            </div>
+        
+    </main>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+      <div class="top-footer">
+        <p>Bantar Adhi Nugrahanto</p>
+      </div>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list">
+            <a href="#home">Home</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="tutorial.html">Tutorial</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social-icons">
+        <div class="icon"><i class="uil uil-instagram" onClick="window.location.href='https://www.instagram.com/adhii._57/'"></i></div>
+        <div class="icon"><i class="uil uil-linkedin-alt" onClick="window.location.href='https://www.linkedin.com/in/bantar-adhi-nugrahanto-488637300'"></i></div>
+        <div class="icon"><i class="uil uil-dribbble"></i></div>
+        <div class="icon"><i class="uil uil-github-alt" onClick="window.location.href='github.com/Adhi57'"></i></div>
+      </div>
+      <div class="bottom-footer">
+        <p style="color: whitesmoke;">
+          Copyright &copy;
+          <a href="#home" style="text-decoration: none">adhinugrahanto027</a> - All
+          rights reserved
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ----- TYPING JS Link ----- -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- ----- SCROLL REVEAL JS Link----- -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- ----- MAIN JS ----- -->
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
