@@ -704,14 +704,14 @@ footer {
   .featured-image {
     order: 1;
     justify-content: center;
-    min-height: 150px;
+    min-height: 550px;
     width: 100%;
     margin-top: 65px;
   }
   .image,
   .image img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
   }
   .row {
     display: flex;
@@ -734,6 +734,15 @@ footer {
   .project-box {
     width: 80%;
   }
+  .scroll-btn {
+    display: none;
+  }
+
+  .section {
+    display: block;
+    margin-top: 90px;
+  }
+
 }
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
